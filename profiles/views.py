@@ -12,7 +12,7 @@ def profiles(request):
 
     # Проверяем POST параметры и выводим в консоль
     for key, value in request.POST.items():
-        logger.error(f"POST param: {key}={value}")
+        logger.info(f"POST param: {key}={value}")
 
     # Если были GET параметры в запросе, выводим соответствующее сообщение
     if len(message):
